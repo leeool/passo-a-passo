@@ -50,6 +50,42 @@ a {
     color: white;
 }
 
+.mark{
+    position: relative;
+    color: rgb(231, 78, 78);
+    transition: .3s;
+}
+
+.mark::before{
+    content: "Parabéns!";
+    bottom: 0%;
+    left: 30%;
+    position: absolute;
+    background-color: rgba(182, 182, 182, 0.49);
+    border: 1px rgba(182, 182, 182, 0.77) solid;
+    padding: .5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    transform: scale(0);
+    transition: .3s;
+}
+
+.mark:hover::before{
+    transform: scale(1);
+    bottom: 100%;
+    left: 30%;
+}
+
+.mark2{
+    transition: .6s;
+    transform: scale(0);
+}
+
+.mark2:hover{
+    transform: scale(1);
+    text-decoration: underline rgb(231, 78, 78);
+}
+
 .inicio::after {
     content: "";
     background-color: black;
