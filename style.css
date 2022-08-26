@@ -1,12 +1,11 @@
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
 }
 
 body{
-    display: grid;
-    grid-template-columns: 1fr;
     max-width: 800px;
     margin: auto;
+    height: 2000px;
     position: relative;
 }
 
@@ -23,6 +22,7 @@ h1{
     padding: .5rem 1rem;
     text-align: center;
     border-radius: 4px;
+    border: 2px lightgray;
 }
 
 .inicio{
@@ -30,6 +30,10 @@ h1{
     text-align: center;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
 .link{
     text-align: center;
     place-self: center;
@@ -38,14 +42,44 @@ h1{
     border-radius: 4px;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+.link:hover{
+    border: 1px solid black;
+}
+
+.link a:hover{
+    color: white;
+    font-size: 1.2rem;
+}
+
+span{
+    display: flex;
+    background-color: black;
+    width: 800px;
+    height: 1px;
+    position: absolute;
+    top: 270px;
 }
 
 .rodape{
-    /* position: fixed; */
-    bottom: 0;
-    place-content: center;
-    columns: 1;
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    background-color: lightslategray;
+    text-align: center;
+    width: 100%;
+}
+
+.rodape a{
+    color: rgb(255, 138, 138);
+}
+
+.rodape a:hover{
+    color: lightcyan;
+}
+
+.rodape{
+    padding: 5px;
+    font-size: 1.2rem;
+    color: white;
 }
