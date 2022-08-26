@@ -35,21 +35,21 @@ a{
     color: black;
 }
 .link{
+    margin: 0;
     text-align: center;
     place-self: center;
     background-color: lightcoral;
     padding: .5rem 1rem;
     border-radius: 4px;
+    transition: .3s;
 }
 
 .link:hover{
+    color: white;
+    font-size: 1.2rem;
     border: 1px solid black;
 }
 
-.link a:hover{
-    color: white;
-    font-size: 1.2rem;
-}
 
 span{
     display: flex;
@@ -72,10 +72,11 @@ span{
 
 .rodape a{
     color: rgb(255, 138, 138);
+    transition: .3s;
 }
 
 .rodape a:hover{
-    color: lightcyan;
+    color: white;
 }
 
 .rodape{
